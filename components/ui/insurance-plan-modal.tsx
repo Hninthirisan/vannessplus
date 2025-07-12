@@ -191,7 +191,7 @@ export function InsurancePlanModal({
             plan.provider === mostValuable ? (
               <BackgroundGradient
                 key={plan.provider}
-                className="rounded-3xl p-6 bg-slate-800/10 ring-5 ring-cyan-400/50">
+                className="rounded-3xl p-6 bg-slate-800/10 ring-4 ring-cyan-400/50">
                 <h3 className="text-xl font-bold text-neutral-100 mb-2">
                   {plan.provider}
                 </h3>
