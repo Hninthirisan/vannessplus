@@ -56,11 +56,11 @@ export default function Home() {
     <div className="flex flex-col h-screen w-screen items-center relative justify-center">
       <BackgroundBeams />
       <SmokeyCursor
-        splatRadius={0.3}
-        splatForce={8000}
-        densityDissipation={80}
-        velocityDissipation={80}
-        colorUpdateSpeed={90}
+        splatRadius={1}
+        splatForce={10000}
+        densityDissipation={100}
+        velocityDissipation={100}
+        colorUpdateSpeed={100}
       />
       <div className="flex flex-col items-center mb-20">
         <h1 className="ml-1 mb-3 relative z-10 text-lg md:text-xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-neutral-800 text-center font-sans font-bold">
