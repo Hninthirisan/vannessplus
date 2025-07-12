@@ -1,7 +1,7 @@
 // components/ui/insurance-plan-modal.tsx
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
@@ -19,7 +19,7 @@ function getMostValuable(plans: Plan[]): string {
     const avg = (plan.priceMin + plan.priceMax) / 2;
     const score = avg / plan.duration;
     return score < (best.score ?? Infinity) ? { ...plan, score } : best;
-  }, {} as any).provider;
+  }, {} as float).provider;
 }
 
 export function InsurancePlanModal({
