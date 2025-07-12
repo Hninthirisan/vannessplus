@@ -29,7 +29,7 @@ function getMostValuable(plans: Plan[]): string {
   }, null);
 
   return bestPlan?.provider ?? "";
-}}
+}
 
 export function InsurancePlanModal({
   location,
