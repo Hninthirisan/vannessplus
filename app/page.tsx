@@ -64,7 +64,7 @@ export default function Home() {
       />
       <div className="flex flex-col items-center mb-20">
         <h1 className="ml-1 mb-3 relative z-10 text-lg md:text-xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-neutral-800 text-center font-sans font-bold">
-          Let's explore
+          Explore
         </h1>
         <h1 className="relative z-10 text-lg md:text-8xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 text-center font-sans font-bold">
           {location}
