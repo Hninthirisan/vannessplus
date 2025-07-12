@@ -15,12 +15,21 @@ interface Plan {
 }
 
 function getMostValuable(plans: Plan[]): string {
-  return plans.reduce((best, plan) => {
+  type ScoredPlan = Plan & { score: number };
+
+  const bestPlan = plans.reduce<ScoredPlan | null>((best, plan) => {
     const avg = (plan.priceMin + plan.priceMax) / 2;
     const score = avg / plan.duration;
-    return score < (best.score ?? Infinity) ? { ...plan, score } : best;
-  }, {} as float).provider;
-}
+
+    if (!best || score < best.score) {
+      return { ...plan, score };
+    }
+
+    return best;
+  }, null);
+
+  return bestPlan?.provider ?? "";
+}}
 
 export function InsurancePlanModal({
   location,
