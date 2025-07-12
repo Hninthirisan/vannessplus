@@ -15,7 +15,7 @@ function pointerPrototype() {
         color: { r: 0, g: 0, b: 0 },
     };
 }
-export default function SmokeyCursor({ simulationResolution = 128, dyeResolution = 1440, captureResolution = 512, densityDissipation = 3.5, velocityDissipation = 2, pressure = 0.1, pressureIterations = 20, curl = 3, splatRadius = 0.2, splatForce = 6000, enableShading = true, colorUpdateSpeed = 10, backgroundColor = { r: 0.5, g: 0, b: 0 }, transparent = true, className = "", disabled = false, intensity = 1, followMouse = true, autoColors = true, }) {
+export default function SmokeyCursor({ simulationResolution = 128, dyeResolution = 1440, captureResolution = 512, densityDissipation = 3.5, velocityDissipation = 2, pressure = 0.1, pressureIterations = 20, curl = 3, splatRadius = 0.2, splatForce = 6000, enableShading = true, colorUpdateSpeed = 10, backgroundColor = { r: 0.5, g: 0, b: 0 }, transparent = true, }) {
     const canvasRef = useRef(null);
     useEffect(() => {
         const canvas = canvasRef.current;
